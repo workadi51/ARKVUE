@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ARKVUE helps founder-led trading businesses identify the bottleneck slowing growth and improve the systems behind acquisition, conversion and retention.">
     <title>ARKVUE | Growth Systems for Trading Businesses</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -33,13 +31,6 @@
             font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
 
-        .brand-wordmark {
-            font-family: "grqalir-bolditalic", Georgia, "Times New Roman", serif;
-            font-style: italic;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-        }
-
         .hero-grid {
             background-image:
                 linear-gradient(rgba(23, 32, 51, 0.05) 1px, transparent 1px),
@@ -50,71 +41,58 @@
         .metric-line {
             width: var(--line-width);
         }
-
-        .section-shell {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
-
-        @media (max-width: 768px) {
-            .section-shell {
-                padding-top: 4rem;
-                padding-bottom: 4rem;
-            }
-        }
     </style>
 </head>
 <body class="bg-white text-ink antialiased">
-    <header class="sticky top-0 z-50 border-b border-black/10 bg-ink backdrop-blur">
-        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
-            <a href="#" class="brand-wordmark text-2xl text-white" aria-label="ARKVUE home">
-                ARKVUE
+    <header class="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+            <a href="#" class="flex items-center gap-3" aria-label="ARKVUE home">
+                <span class="flex h-10 w-10 items-center justify-center rounded border border-ink bg-ink text-sm font-bold text-white">AV</span>
+                <span class="text-lg font-semibold tracking-wide">ARKVUE</span>
             </a>
 
-            <nav class="hidden items-center gap-8 text-sm font-medium text-white/70 md:flex" aria-label="Primary navigation">
-                <a class="transition hover:text-white" href="#how-it-works">How It Works</a>
-                <a class="transition hover:text-white" href="#who-we-help">Who We Help</a>
-                <a class="transition hover:text-white" href="#case-studies">Case Studies</a>
-                <a class="transition hover:text-white" href="#about">About</a>
-                <a class="transition hover:text-white" href="#growth-audit">Growth Audit</a>
+            <nav class="hidden items-center gap-8 text-sm font-medium text-muted md:flex" aria-label="Primary navigation">
+                <a class="transition hover:text-ink" href="#how-it-works">How It Works</a>
+                <a class="transition hover:text-ink" href="#who-we-help">Who We Help</a>
+                <a class="transition hover:text-ink" href="#case-studies">Case Studies</a>
+                <a class="transition hover:text-ink" href="#about">About</a>
             </nav>
 
-            <a href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1" class="shrink-0 rounded-md bg-accent px-4 py-3 text-sm font-semibold text-white shadow-subtle transition hover:bg-accentDark sm:px-5">
-                Free Growth Audit
+            <a href="growth-audit/index.html" class="rounded-md bg-ink px-5 py-3 text-sm font-semibold text-white shadow-subtle transition hover:bg-accent">
+                Book a Growth Audit
             </a>
         </div>
     </header>
 
     <main>
         <section class="hero-grid border-b border-line bg-soft">
-            <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 md:py-20 lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-24">
+            <div class="mx-auto grid min-h-[calc(100vh-74px)] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
                 <div class="reveal max-w-3xl">
                     <p class="mb-5 inline-flex rounded-full border border-line bg-white px-4 py-2 text-xs font-semibold uppercase text-muted shadow-sm">
                         For founder-led trading businesses
                     </p>
-                    <h1 class="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-normal text-ink md:text-6xl">
-                        Find the bottleneck stopping your trading business from growing.
+                    <h1 class="max-w-4xl text-5xl font-semibold leading-[1.04] tracking-normal text-ink md:text-6xl">
+                        Find The One Thing Slowing Your Growth.
                     </h1>
                     <p class="mt-7 max-w-2xl text-lg leading-8 text-muted">
-                        ARKVUE helps trading educators, academies and brokerages understand why growth is slowing, where customers are dropping off, and what system should be improved first.
+                        Most businesses do not have ten problems. They have one bottleneck that limits everything else. ARKVUE helps trading educators, academies and brokerages identify that bottleneck and improve the systems that drive customer acquisition, conversion and retention.
                     </p>
                     <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-                        <a href="https://calendly.com/iamshubhamraut" class="rounded-md bg-accent px-6 py-4 text-center text-sm font-semibold text-white shadow-subtle transition hover:bg-accentDark">
+                        <a href="growth-audit/index.html" class="rounded-md bg-accent px-6 py-4 text-center text-sm font-semibold text-white shadow-subtle transition hover:bg-accentDark">
                             Book a Growth Audit
                         </a>
                         <a href="#how-it-works" class="rounded-md border border-line bg-white px-6 py-4 text-center text-sm font-semibold text-ink transition hover:border-ink">
                             How It Works
                         </a>
                     </div>
-                    <p class="mt-4 text-sm text-muted">For trading businesses with an existing offer and a founder ready to improve the system.</p>
-                    <div class="mt-10 grid max-w-xl grid-cols-1 gap-4 border-t border-line pt-6 text-sm text-muted sm:grid-cols-3">
+                    <div class="mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-line pt-6 text-sm text-muted">
                         <div>
                             <strong class="block text-xl text-ink">01</strong>
                             Diagnose first
                         </div>
                         <div>
                             <strong class="block text-xl text-ink">30 min</strong>
-                            Growth Audit
+                            Growth audit
                         </div>
                         <div>
                             <strong class="block text-xl text-ink">3 systems</strong>
@@ -179,36 +157,7 @@
             </div>
         </section>
 
-        <section class="section-shell border-b border-line bg-white">
-            <div class="mx-auto max-w-7xl px-5 lg:px-8">
-                <div class="reveal max-w-3xl">
-                    <p class="text-sm font-semibold uppercase text-accent">This Is For You If</p>
-                    <h2 class="mt-3 text-4xl font-semibold tracking-normal text-ink">You have momentum, but the business still feels harder to scale than it should.</h2>
-                </div>
-                <div class="mt-10 grid gap-4 md:grid-cols-2">
-                    <div class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <p class="font-semibold">You get attention, but not enough qualified leads.</p>
-                    </div>
-                    <div class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <p class="font-semibold">You create more content or run ads, but conversions stay weak.</p>
-                    </div>
-                    <div class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <p class="font-semibold">Your sales process feels inconsistent or founder-dependent.</p>
-                    </div>
-                    <div class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <p class="font-semibold">You do not know whether the problem is lead quality, offer, sales, onboarding or retention.</p>
-                    </div>
-                    <div class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <p class="font-semibold">You have an existing offer and are ready to scale with clearer priorities.</p>
-                    </div>
-                    <div class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <p class="font-semibold">You have tried more tactics, but still do not know what to improve next.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="who-we-help" class="section-shell border-b border-line bg-soft">
+        <section id="who-we-help" class="border-b border-line bg-white py-20">
             <div class="mx-auto max-w-7xl px-5 lg:px-8">
                 <div class="reveal max-w-3xl">
                     <p class="text-sm font-semibold uppercase text-accent">Who We Help</p>
@@ -224,7 +173,7 @@
                         <p class="mt-4 text-sm leading-6 text-muted">Improve lead quality, conversions and business growth.</p>
                     </article>
                     <article class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <h3 class="text-lg font-semibold">Brokerages</h3>
+                        <h3 class="text-lg font-semibold">Forex Brokers</h3>
                         <p class="mt-4 text-sm leading-6 text-muted">Acquire, activate and retain more traders.</p>
                     </article>
                     <article class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
@@ -235,7 +184,7 @@
             </div>
         </section>
 
-        <section class="section-shell border-b border-line bg-white">
+        <section class="border-b border-line bg-soft py-20">
             <div class="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
                 <div class="reveal">
                     <p class="text-sm font-semibold uppercase text-accent">The Core Problem</p>
@@ -244,33 +193,12 @@
                 <div class="reveal rounded-lg border border-line bg-white p-8 shadow-subtle">
                     <h3 class="text-2xl font-semibold">It stops because nobody knows what to improve next.</h3>
                     <p class="mt-5 leading-8 text-muted">Most businesses respond to slow growth by creating more content, running more ads or hiring more people. But growth often slows because the biggest business constraint has not been identified.</p>
-                    <p class="mt-5 leading-8 text-muted">The issue may be poor lead quality, a weak enrollment system, unclear offer positioning, inconsistent follow-up, low trust during onboarding or retention that is not being measured. ARKVUE helps founders identify that constraint before investing time and money into the wrong improvements.</p>
+                    <p class="mt-5 leading-8 text-muted">ARKVUE helps founders identify that constraint before investing time and money into the wrong improvements.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section-shell border-b border-line bg-soft">
-            <div class="mx-auto max-w-7xl px-5 lg:px-8">
-                <div class="reveal max-w-3xl">
-                    <p class="text-sm font-semibold uppercase text-accent">What ARKVUE Diagnoses</p>
-                    <h2 class="mt-3 text-4xl font-semibold tracking-normal">The bottleneck can sit anywhere in the customer journey.</h2>
-                </div>
-                <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Customer acquisition</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Lead quality</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Sales process</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Conversion journey</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Onboarding</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Retention</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Referral systems</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Team structure</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Growth metrics</p></div>
-                    <div class="reveal rounded-lg border border-line bg-white p-5 shadow-subtle"><p class="font-semibold">Business priorities</p></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="how-it-works" class="section-shell border-b border-line bg-white">
+        <section id="how-it-works" class="border-b border-line bg-white py-20">
             <div class="mx-auto max-w-7xl px-5 lg:px-8">
                 <div class="reveal flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
                     <div class="max-w-3xl">
@@ -294,13 +222,13 @@
                     <div class="reveal rounded-lg border border-line bg-white p-7 shadow-subtle">
                         <span class="text-sm font-semibold text-accent">03</span>
                         <h3 class="mt-5 text-2xl font-semibold">Improve</h3>
-                        <p class="mt-4 leading-7 text-muted">We work with you to improve that bottleneck, measure the impact and continue systematic improvement if the engagement proceeds.</p>
+                        <p class="mt-4 leading-7 text-muted">We work with you to improve that bottleneck, measure the impact and repeat the process.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-shell border-b border-line bg-soft">
+        <section class="border-b border-line bg-soft py-20">
             <div class="mx-auto max-w-7xl px-5 lg:px-8">
                 <div class="reveal max-w-3xl">
                     <p class="text-sm font-semibold uppercase text-accent">What Better Decisions Create</p>
@@ -329,7 +257,7 @@
             </div>
         </section>
 
-        <section id="case-studies" class="section-shell border-b border-line bg-white">
+        <section id="case-studies" class="border-b border-line bg-white py-20">
             <div class="mx-auto max-w-7xl px-5 lg:px-8">
                 <div class="reveal max-w-3xl">
                     <p class="text-sm font-semibold uppercase text-accent">Case Studies</p>
@@ -340,16 +268,14 @@
                         <h3 class="text-2xl font-semibold">Rajeev Gulati Academy</h3>
                         <div class="mt-6 space-y-5 text-sm">
                             <p><span class="block font-semibold text-ink">Challenge</span><span class="text-muted">Poor lead quality.</span></p>
-                            <p><span class="block font-semibold text-ink">Diagnosis</span><span class="text-muted">The enrollment system needed clearer qualification before serious sales conversations.</span></p>
-                            <p><span class="block font-semibold text-ink">Focus</span><span class="text-muted">Improve the enrollment journey so better-fit prospects move forward.</span></p>
+                            <p><span class="block font-semibold text-ink">Focus</span><span class="text-muted">Enrollment system.</span></p>
                         </div>
                     </article>
                     <article class="reveal rounded-lg border border-line p-7 shadow-subtle">
                         <h3 class="text-2xl font-semibold">Qberx</h3>
                         <div class="mt-6 space-y-5 text-sm">
                             <p><span class="block font-semibold text-ink">Challenge</span><span class="text-muted">Scaling a new brokerage.</span></p>
-                            <p><span class="block font-semibold text-ink">Diagnosis</span><span class="text-muted">Trust, onboarding and trader activation were critical to the growth journey.</span></p>
-                            <p><span class="block font-semibold text-ink">Focus</span><span class="text-muted">Improve the path that helps new traders trust the brokerage, activate properly and stay engaged.</span></p>
+                            <p><span class="block font-semibold text-ink">Focus</span><span class="text-muted">Trust, onboarding and trader activation.</span></p>
                         </div>
                     </article>
                     <article class="reveal rounded-lg border border-line bg-ink p-7 text-white shadow-subtle">
@@ -360,38 +286,33 @@
             </div>
         </section>
 
-        <section id="about" class="section-shell border-b border-line bg-soft">
+        <section id="about" class="border-b border-line bg-soft py-20">
             <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
                 <div class="reveal rounded-lg border border-line bg-white p-8 shadow-subtle">
-                    <p class="text-sm font-semibold uppercase text-accent">Founder</p>
-                    <h2 class="mt-4 text-3xl font-semibold">Vinayak Ghire</h2>
+                    <div class="flex h-28 w-28 items-center justify-center rounded-lg bg-ink text-3xl font-semibold text-white">VG</div>
+                    <h2 class="mt-8 text-3xl font-semibold">Vinayak Girhe</h2>
                     <p class="mt-2 text-muted">Founder, ARKVUE</p>
-                    <div class="mt-8 space-y-4 border-t border-line pt-6 text-sm text-muted">
-                        <p><span class="font-semibold text-ink">Based in</span><br>Pune, Maharashtra</p>
-                        <p><span class="font-semibold text-ink">Focus</span><br>Founder-led trading businesses</p>
-                        <p><span class="font-semibold text-ink">Research</span><br>Hundreds of hours speaking with trading educators, academy owners and brokerage founders.</p>
-                    </div>
                 </div>
                 <div class="reveal rounded-lg border border-line bg-white p-8 shadow-subtle">
                     <p class="text-sm font-semibold uppercase text-accent">Meet The Founder</p>
-                    <p class="mt-5 leading-8 text-muted">Over the past several months, Vinayak has spent hundreds of hours speaking with trading educators, academy owners and brokerage founders. One pattern kept repeating.</p>
+                    <p class="mt-5 leading-8 text-muted">Over the past several months, Vinayak has spent hundreds of hours speaking with trading educators, academy owners and broker founders. One pattern kept repeating.</p>
                     <p class="mt-5 leading-8 text-muted">Businesses were not struggling because they lacked attention. They were struggling because they did not know what to improve next.</p>
                     <p class="mt-5 leading-8 text-muted">ARKVUE exists to help founders identify those bottlenecks, improve them systematically and make better growth decisions.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section-shell border-b border-line bg-white">
+        <section class="border-b border-line bg-white py-20">
             <div class="mx-auto grid max-w-7xl gap-5 px-5 lg:grid-cols-3 lg:px-8">
                 <div class="reveal rounded-lg border border-line p-7 shadow-subtle">
                     <p class="text-sm font-semibold uppercase text-accent">Mission</p>
-                    <h3 class="mt-4 text-2xl font-semibold">Help founder-led trading businesses improve the systems that drive growth.</h3>
-                    <p class="mt-5 leading-7 text-muted">ARKVUE helps founder-led trading businesses identify and improve the systems that drive customer acquisition, conversion and retention.</p>
+                    <h3 class="mt-4 text-2xl font-semibold">Help trading businesses make better growth decisions.</h3>
+                    <p class="mt-5 leading-7 text-muted">ARKVUE brings structure to acquisition, conversion and retention decisions so founders can improve the system that matters most.</p>
                 </div>
                 <div class="reveal rounded-lg border border-line p-7 shadow-subtle">
                     <p class="text-sm font-semibold uppercase text-accent">Vision</p>
-                    <h3 class="mt-4 text-2xl font-semibold">Become the operating growth partner for serious trading education and brokerage brands.</h3>
-                    <p class="mt-5 leading-7 text-muted">ARKVUE exists for businesses that want to scale through better systems, clearer priorities and measurable improvement.</p>
+                    <h3 class="mt-4 text-2xl font-semibold">Become the operating partner for serious trading education and brokerage brands.</h3>
+                    <p class="mt-5 leading-7 text-muted">The long-term goal is to help founder-led trading businesses scale with clarity, accountability and repeatable systems.</p>
                 </div>
                 <div class="reveal rounded-lg border border-line p-7 shadow-subtle">
                     <p class="text-sm font-semibold uppercase text-accent">Principles</p>
@@ -401,29 +322,29 @@
             </div>
         </section>
 
-        <section id="growth-audit" class="section-shell border-b border-line bg-ink text-white">
+        <section id="growth-audit" class="border-b border-line bg-ink py-20 text-white">
             <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1fr_0.9fr] lg:px-8">
                 <div class="reveal">
                     <p class="text-sm font-semibold uppercase text-white/60">Growth Audit</p>
                     <h2 class="mt-3 text-4xl font-semibold tracking-normal">Book a focused discussion about the bottleneck limiting your next stage of growth.</h2>
-                    <p class="mt-6 max-w-2xl leading-8 text-white/70">The Growth Audit is a free 30-minute call where ARKVUE understands your business, diagnoses the biggest growth bottleneck, discusses practical recommendations and determines next steps if ARKVUE is a good fit.</p>
+                    <p class="mt-6 max-w-2xl leading-8 text-white/70">The audit is a structured conversation to understand your business, customer journey, offer and current priorities. If ARKVUE can create meaningful value, you will leave with a clear view of how the engagement would work.</p>
                 </div>
                 <div class="reveal rounded-lg bg-white p-7 text-ink shadow-enterprise">
-                    <h3 class="text-2xl font-semibold">What you get from the audit</h3>
+                    <h3 class="text-2xl font-semibold">What the audit covers</h3>
                     <ul class="mt-6 space-y-4 text-sm text-muted">
-                        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-accent"></span><span>A clear understanding of your biggest bottleneck.</span></li>
-                        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-accent"></span><span>Improvement priorities and customer drop-off points.</span></li>
-                        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-accent"></span><span>What is working, what is not working and what not to improve yet.</span></li>
-                        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-accent"></span><span>Whether ARKVUE is the right partner to work with you on improvements.</span></li>
+                        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-accent"></span><span>Where leads currently come from and how qualified they are.</span></li>
+                        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-accent"></span><span>Where prospects drop off before becoming customers.</span></li>
+                        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-accent"></span><span>What should be improved before spending more on content or ads.</span></li>
+                        <li class="flex gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-accent"></span><span>Whether ARKVUE is the right partner for the next stage.</span></li>
                     </ul>
-                    <a href="https://calendly.com/iamshubhamraut" class="mt-8 block rounded-md bg-accent px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-accentDark">
+                    <a href="growth-audit/index.html" class="mt-8 block rounded-md bg-accent px-6 py-4 text-center text-sm font-semibold text-white transition hover:bg-accentDark">
                         Book a Growth Audit
                     </a>
                 </div>
             </div>
         </section>
 
-        <section class="section-shell bg-white">
+        <section class="bg-white py-20">
             <div class="mx-auto max-w-4xl px-5 lg:px-8">
                 <div class="reveal text-center">
                     <p class="text-sm font-semibold uppercase text-accent">Frequently Asked Questions</p>
@@ -432,15 +353,11 @@
                 <div class="mt-10 divide-y divide-line rounded-lg border border-line bg-white shadow-subtle">
                     <details class="group p-6" open>
                         <summary class="cursor-pointer list-none text-lg font-semibold">Who is ARKVUE for?</summary>
-                        <p class="mt-4 leading-7 text-muted">Founder-led trading businesses including educators, academies and brokerages with an existing offer.</p>
-                    </details>
-                    <details class="group p-6">
-                        <summary class="cursor-pointer list-none text-lg font-semibold">Is the Growth Audit free?</summary>
-                        <p class="mt-4 leading-7 text-muted">Yes. The Growth Audit is completely free.</p>
+                        <p class="mt-4 leading-7 text-muted">Founder-led trading businesses including educators, academies and brokers.</p>
                     </details>
                     <details class="group p-6">
                         <summary class="cursor-pointer list-none text-lg font-semibold">What is a Growth Audit?</summary>
-                        <p class="mt-4 leading-7 text-muted">A structured 30-minute discussion to understand your business, diagnose the biggest growth bottleneck, discuss practical recommendations and determine next steps.</p>
+                        <p class="mt-4 leading-7 text-muted">A structured discussion to identify the biggest bottleneck limiting your business and discuss practical opportunities for improvement.</p>
                     </details>
                     <details class="group p-6">
                         <summary class="cursor-pointer list-none text-lg font-semibold">Is this a sales call?</summary>
@@ -451,70 +368,60 @@
                         <p class="mt-4 leading-7 text-muted">Around 30 minutes.</p>
                     </details>
                     <details class="group p-6">
-                        <summary class="cursor-pointer list-none text-lg font-semibold">Does ARKVUE only work with trading businesses?</summary>
-                        <p class="mt-4 leading-7 text-muted">Yes. ARKVUE focuses on founder-led trading businesses including educators, academies and brokerages.</p>
-                    </details>
-                    <details class="group p-6">
-                        <summary class="cursor-pointer list-none text-lg font-semibold">What if ARKVUE cannot help?</summary>
-                        <p class="mt-4 leading-7 text-muted">ARKVUE will honestly tell you if it is not the right fit.</p>
-                    </details>
-                    <details class="group p-6">
                         <summary class="cursor-pointer list-none text-lg font-semibold">What happens afterwards?</summary>
-                        <p class="mt-4 leading-7 text-muted">If there is a fit, ARKVUE works with you to improve the identified bottleneck, measure impact and continue systematic improvement.</p>
+                        <p class="mt-4 leading-7 text-muted">If we believe ARKVUE can create meaningful value, we will explain exactly how we would approach the engagement.</p>
                     </details>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="border-t border-black/10 bg-ink text-white">
+    <footer class="border-t border-line bg-soft">
         <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-5 lg:px-8">
             <div class="lg:col-span-2">
-                <div class="brand-wordmark text-2xl">ARKVUE</div>
-                <p class="mt-5 max-w-md text-sm leading-7 text-white/70">Growth diagnosis and improvement systems for founder-led trading businesses.</p>
-                <p class="mt-4 text-sm text-white/60">Pune, Maharashtra</p>
-                <p class="mt-2 text-sm text-white/60"><a class="hover:text-white" href="mailto:info@arkvue.com">info@arkvue.com</a></p>
-                <a href="https://calendly.com/iamshubhamraut" class="mt-6 inline-flex rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accentDark">
+                <div class="flex items-center gap-3">
+                    <span class="flex h-10 w-10 items-center justify-center rounded border border-ink bg-ink text-sm font-bold text-white">AV</span>
+                    <span class="text-lg font-semibold tracking-wide">ARKVUE</span>
+                </div>
+                <p class="mt-5 max-w-md text-sm leading-7 text-muted">Growth diagnosis and improvement systems for founder-led trading businesses.</p>
+                <a href="growth-audit/index.html" class="mt-6 inline-flex rounded-md bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent">
                     Book a Growth Audit
                 </a>
             </div>
 
             <div>
                 <h3 class="text-sm font-semibold">Company</h3>
-                <ul class="mt-4 space-y-3 text-sm text-white/70">
-                    <li><a class="hover:text-white" href="#about">About</a></li>
-                    <li><a class="hover:text-white" href="#case-studies">Case Studies</a></li>
-                    <li><a class="hover:text-white" href="#how-it-works">How It Works</a></li>
+                <ul class="mt-4 space-y-3 text-sm text-muted">
+                    <li><a class="hover:text-ink" href="#about">About</a></li>
+                    <li><a class="hover:text-ink" href="#case-studies">Case Studies</a></li>
+                    <li><a class="hover:text-ink" href="#how-it-works">How It Works</a></li>
                 </ul>
             </div>
 
             <div>
                 <h3 class="text-sm font-semibold">Who We Help</h3>
-                <ul class="mt-4 space-y-3 text-sm text-white/70">
+                <ul class="mt-4 space-y-3 text-sm text-muted">
                     <li>Trading Educators</li>
                     <li>Trading Academies</li>
-                    <li>Brokerages</li>
+                    <li>Forex Brokers</li>
                 </ul>
             </div>
 
             <div>
                 <h3 class="text-sm font-semibold">Connect</h3>
-                <ul class="mt-4 space-y-3 text-sm text-white/70">
-                    <li><a class="hover:text-white" href="https://calendly.com/iamshubhamraut">Growth Audit</a></li>
-                    <li><a class="hover:text-white" href="https://www.instagram.com/arkvue.co/">Instagram</a></li>
-                    <li><a class="hover:text-white" href="https://www.linkedin.com/company/arkvue/posts/?feedView=all">LinkedIn</a></li>
-                    <li><a class="hover:text-white" href="https://x.com/ARKVUE">X</a></li>
-                    <li><a class="hover:text-white" href="https://www.youtube.com/@arkvueco">YouTube</a></li>
-                    <li><a class="hover:text-white" href="https://medium.com/@arkvue.com">Medium</a></li>
+                <ul class="mt-4 space-y-3 text-sm text-muted">
+                    <li><a class="hover:text-ink" href="growth-audit/index.html">Growth Audit</a></li>
+                    <li><a class="hover:text-ink" href="#">Instagram</a></li>
+                    <li><a class="hover:text-ink" href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1">Calendly</a></li>
                 </ul>
             </div>
         </div>
-        <div class="border-t border-white/10 px-5 py-6">
-            <div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-white/60 md:flex-row md:items-center md:justify-between lg:px-8">
+        <div class="border-t border-line px-5 py-6">
+            <div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-muted md:flex-row md:items-center md:justify-between lg:px-8">
                 <p>Copyright 2026 ARKVUE. All rights reserved.</p>
                 <div class="flex gap-5">
-                    <a class="hover:text-white" href="#">Privacy Policy</a>
-                    <a class="hover:text-white" href="#">Terms</a>
+                    <a class="hover:text-ink" href="#">Privacy Policy</a>
+                    <a class="hover:text-ink" href="#">Terms</a>
                 </div>
             </div>
         </div>
