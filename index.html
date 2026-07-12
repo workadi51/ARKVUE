@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ARKVUE helps founder-led trading businesses identify the bottleneck slowing growth and improve the systems behind acquisition, conversion and retention.">
     <title>ARKVUE | Growth Systems for Trading Businesses</title>
-    <link rel="icon" href="favicon/favicon.ico">
-    <link rel="icon" href="favicon/favicon-16x16.ico" sizes="16x16" type="image/x-icon">
-    <link rel="icon" href="favicon/favicon-32x32.ico" sizes="32x32" type="image/x-icon">
-    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="icon" href="favicon/A.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -45,23 +42,39 @@
         .metric-line {
             width: var(--line-width);
         }
+
+        .nav-shell {
+            box-shadow: 0 18px 48px rgba(23, 32, 51, 0.10);
+        }
+
+        .nav-link {
+            transition: color 160ms ease, background-color 160ms ease, transform 160ms ease;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-1px);
+        }
+
+        .nav-link:active {
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body class="bg-white text-ink antialiased">
-    <header class="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-            <a href="#" class="flex items-center gap-3" aria-label="ARKVUE home">
-                <span class="text-lg font-semibold tracking-wide">ARKVUE</span>
+    <header class="fixed inset-x-0 top-4 z-50 px-4">
+        <div class="nav-shell mx-auto flex max-w-4xl items-center justify-between gap-3 rounded-full border border-white/70 bg-white/90 px-4 py-3 backdrop-blur-xl sm:px-5">
+            <a href="#" class="flex shrink-0 items-center gap-3 rounded-full px-2 py-1.5 transition hover:bg-soft active:scale-[0.98]" aria-label="ARKVUE home">
+                <span class="grid h-8 w-8 place-items-center rounded-full bg-ink text-sm font-semibold text-white">A</span>
+                <span class="text-base font-semibold tracking-wide">ARKVUE</span>
             </a>
 
-            <nav class="hidden items-center gap-8 text-sm font-medium text-muted md:flex" aria-label="Primary navigation">
-                <a class="transition hover:text-ink" href="#how-it-works">How It Works</a>
-                <a class="transition hover:text-ink" href="#who-we-help">Who We Help</a>
-                <a class="transition hover:text-ink" href="#case-studies">Case Studies</a>
-                <a class="transition hover:text-ink" href="#about">About</a>
+            <nav class="hidden items-center rounded-full bg-soft/80 p-1 text-sm font-medium text-muted md:flex" aria-label="Primary navigation">
+                <a class="nav-link rounded-full px-4 py-2 hover:bg-white hover:text-ink" href="#how-it-works">How It Works</a>
+                <a class="nav-link rounded-full px-4 py-2 hover:bg-white hover:text-ink" href="#who-we-help">Who We Help</a>
+                <a class="nav-link rounded-full px-4 py-2 hover:bg-white hover:text-ink" href="#about">About</a>
             </nav>
 
-            <a href="growth-audit/index.html" class="rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white shadow-subtle transition hover:bg-accentDark">
+            <a href="growth-audit/index.html" class="rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-ink active:scale-[0.98] sm:px-5">
                 Book a Growth Audit
             </a>
         </div>
@@ -69,7 +82,7 @@
 
     <main>
         <section class="hero-grid border-b border-line bg-soft">
-            <div class="mx-auto grid min-h-[calc(100vh-74px)] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
+            <div class="mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-5 pb-16 pt-32 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
                 <div class="reveal max-w-3xl">
                     <p class="mb-5 inline-flex rounded-full border border-line bg-white px-4 py-2 text-xs font-semibold uppercase text-muted shadow-sm">
                         For founder-led trading businesses

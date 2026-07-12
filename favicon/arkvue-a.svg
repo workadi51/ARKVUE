@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>ARKVUE</title>
+  <rect width="64" height="64" rx="16" fill="#111827"/>
+  <path d="M32 13 14.5 51h9.2l3.6-8.3h9.4l3.6 8.3h9.2L32 13Zm-1.5 21.8L32 31l1.5 3.8 2.6 5.9h-8.2l2.6-5.9Z" fill="#fff"/>
+</svg>
